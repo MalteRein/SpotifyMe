@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+
+/* ================== DEFAULT SETTINGS ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#spotify, #youtube {
+    color: black;
+}
+#spotify:hover {
+    color: #1ed760;
+}
+#youtube:hover {
+    color: #E10600;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+/* ================== MAIN SETTINGS ================== */
+/* ------------- hero ------------- */
+.carousel {
+    width: 80vw;
+    height: 70vh;
+    margin: 0.5rem auto;
+}
+
+.carousel-inner, 
+.carousel-item, 
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-indicators button {
+    filter: invert(1);
+}
+
+/* ------------- slider ------------- */
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+} 
+.main-logo-slider {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+} 
+.main-logo-slider:before,
+.main-logo-slider:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+} 
+.main-logo-slider:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+} 
+.main-logo-slider:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+
+/* ------------- chart ------------- */
+#barChart {
+    height: 100vh;
+}
+
+/* ------------- music ------------- */
+.music {
+    margin-top: 5rem;
+}
+.music-grid {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    width: 100%;
+    gap: 1rem;
+}
+
+.find-playlist, .find-artist, .find-podcast {
+    padding: 0.5rem;
+}
