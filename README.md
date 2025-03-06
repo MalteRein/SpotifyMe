@@ -1,3 +1,3 @@
 # SpotifyMe
 
-Visit Site : https://malterein.github.io/SpotifyME/
+Visit Site : https://malterein.github.io/SpotifyMe/
