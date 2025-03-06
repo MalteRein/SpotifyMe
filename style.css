@@ -91,11 +91,6 @@ body {
     margin: 0 40px;
 }
 
-/* ------------- chart ------------- */
-#barChart {
-    height: 100vh;
-}
-
 /* ------------- music ------------- */
 .music {
     margin-top: 5rem;
@@ -111,4 +106,22 @@ body {
 
 .find-playlist, .find-artist, .find-podcast {
     padding: 0.5rem;
+}
+
+
+/* ================== FOOTER SETTINGS ================== */
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+.footer-links a {
+    color: #1DB954;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
 }
