@@ -17,8 +17,44 @@
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
 
         <style>
-            main h1 {
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #ffffff;
+                color: #121212;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 40px;
+            }
+            header {
+                background-color: #1DB954;
+                padding: 20px;
                 text-align: center;
+                color: white;
+                font-size: 2em;
+            }
+            .section {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 50px 0;
+            }
+            .text {
+                flex: 1;
+                padding: 20px;
+            }
+            .image-placeholder img {
+                width: 100%;
+                height: auto;
+                max-height: 300px;
+                object-fit: cover;
+            }
+            .highlight {
+                color: #1DB954;
+                font-weight: bold;
             }
         </style>
     </head>
@@ -37,7 +73,6 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
                     <a class="nav-link" href="index.html">Music</a>
                     <a class="nav-link" href="about.html">About</a>
-                    <a class="nav-link" href="#">Disabled</a>
                 </div>
             </div>
         </div>
@@ -45,17 +80,66 @@
 
     <!--================== MAIN ====================-->
     <main>
-        <h1>Warum Wir ?</h1>
-
-        <section class="main-charts">
-            <canvas id="barChart"></canvas>
-        </section>
+        <div class="container">
+            <div class="section">
+                <div class="text">
+                    <h1>Willkommen bei <span class="highlight">SpotifyMe</span></h1>
+                    <p>Musik ist mehr als nur Klang – sie ist ein Gefühl, eine Erinnerung, ein Erlebnis. Genau deshalb habe ich <span class="highlight">SpotifyMe</span> ins Leben gerufen.</p>
+                    <p>Hey! Ich bin Malte, 19 Jahre alt und ein echter Musik-Nerd. 🎶 Ich wollte eine Plattform schaffen, die dir hilft, die <strong>perfekte Musik</strong> für jede Stimmung und jeden Moment zu finden.</p>
+                </div>
+                <div class="image-placeholder">
+                    <img src="https://plus.unsplash.com/premium_photo-1682968048675-67c131e66067?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fE11c2lrJTIwdmlzaW9ufGVufDB8fDB8fHww" alt="Platzhalterbild">
+                </div>
+            </div>
+            <div class="section">
+                <div class="image-placeholder">
+                    <canvas id="barChart" style="width: 600px; height: 300px;"></canvas>
+                </div>
+                <div class="text">
+                    <h2>Warum <span class="highlight">SpotifyMe</span>?</h2>
+                    <p>Stundenlang nach der perfekten Playlist suchen? Das war gestern! Mit <span class="highlight">SpotifyMe</span> findest du blitzschnell Songs, die genau zu deinem Geschmack passen.</p>
+                    <ul>
+                        <li>🔍 Intelligente Suche nach Playlists, Künstlern und Podcasts</li>
+                        <li>🎵 Musikempfehlungen, die wirklich zu dir passen</li>
+                        <li>🚀 Schnell, einfach und intuitiv zu bedienen</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="text">
+                    <h2>Unsere Vision</h2>
+                    <p>Musik ist universell, sie verbindet Menschen und schafft Erinnerungen. <span class="highlight">SpotifyMe</span> ist nicht nur eine Suchmaschine – es ist dein persönlicher Musik-Guide.</p>
+                    <p>Wir wollen, dass du nicht einfach nur Musik hörst, sondern sie erlebst. Egal ob du entspannen, feiern oder neue Künstler entdecken möchtest – hier bist du richtig!</p>
+                </div>
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1532342342267-77e8db262ebc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bXVzaWslMjBhYnN0cmFrdHxlbnwwfDB8MHx8fDA%3D" alt="Platzhalterbild">
+                </div>
+            </div>
+            <div class="section">
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGFic3RyYWt0JTIwbXVzaWt8ZW58MHwwfDB8fHww" alt="Platzhalterbild">
+                </div>
+                <div class="text">
+                    <h2>Let's Go! 🚀</h2>
+                    <p>Bereit, deine neue Lieblingsmusik zu entdecken? Dann leg los und lass dich inspirieren! 🎧</p>
+                    <p><span class="highlight">SpotifyMe</span> ist dein Schlüssel zu endlosen musikalischen Möglichkeiten.</p>
+                </div>
+            </div>
+        </div>
     </main>
-    <!--================== NAVBAR ====================-->
-    <!--================== NAVBAR ====================-->
+
+    <!--================== FOOTER ====================-->
+    <footer>
+        <p>&copy; 2025 SpotifyMe. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+            <a href="#">Datenschutz</a>
+            <a href="#">Impressum</a>
+            <a href="#">Kontakt</a>
+        </div>
+    </footer>
 
     <!--================== JS SCRIPT ====================-->
-    <script src="main.js"></script>
+    <script src="charts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
