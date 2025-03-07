@@ -13,15 +13,17 @@ body {
     padding: 0;
 }
 
-#spotify, #youtube {
-    color: black;
+
+#instagram:hover {
+    color: #E1306C;
 }
 #spotify:hover {
     color: #1ed760;
 }
-#youtube:hover {
-    color: #E10600;
+#twitter:hover {
+    color: #1DA1F2;
 }
+
 
 .nav-link:hover {
     cursor: pointer;
@@ -114,7 +116,7 @@ footer {
     background-color: #121212;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     margin-top: 50px;
 }
 .footer-links a {
@@ -124,4 +126,18 @@ footer {
 }
 .footer-links a:hover {
     text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+.accordion-body {
+    text-align: left;
+}
+
+#instagram, #spotify, #twitter {
+    color: black;
+
+    transition: ease 0.3s;
 }
