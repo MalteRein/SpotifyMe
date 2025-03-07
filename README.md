@@ -19,5 +19,3 @@ Diese Webseite wurde mit HTML, CSS und JavaScript entwickelt. Der Fokus liegt au
 **📌 Mitmachen**
 
 Du hast Ideen für Verbesserungen oder möchtest mitwirken? Gerne! Forke das Repository und schicke eine Pull-Request.
-
-[32mDieser Text ist grün[0m
