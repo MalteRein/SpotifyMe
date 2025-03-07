@@ -10,7 +10,7 @@ Willkommen bei SpotifyMe! Diese Webseite hilft dir, die perfekte Spotify-Playlis
 
 **🔗 Webseite**
 
-👉 <a href="https://malterein.github.io/SpotifyMe/" target="_blank">Hier ausprobieren</a>
+👉 [Hier ausprobieren](https://malterein.github.io/SpotifyMe/)
 
 **🛠️ Entwicklung**
 
